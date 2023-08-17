@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.admin_login_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:background="@drawable/background_purple" >
+
+            <TextView
+                android:id="@+id/title_login2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="300dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.20"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textSize="67sp" />
+
+            <TextView
+                android:id="@+id/title_login3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="375dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.20"
+                android:text="welcome admin"
+                android:textColor="#B4FFFFFF"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-330dp"
+            android:background="@drawable/round_box"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_layout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="Username"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#6C1F81"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#6C1F81"
+                app:helperTextEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:startIconTint="#DD6C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_log_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text|textPersonName"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordlayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#6C1F81"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#6C1F81"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                app:startIconTint="#D96C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_log_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textPassword"
+                    android:textSize="28dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_design"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:letterSpacing="0.3"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

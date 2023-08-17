@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Welcome_page">
+
+    <LinearLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/img_shop"
+            android:layout_width="480dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="-30dp"
+            android:background="@drawable/homeshop">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/round_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="0.18"
+                android:text="BLOOM ROOM"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/txt_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="1.23"
+                android:text="FLOWER SHOP"
+                android:textColor="#BE6C1F81"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal|center|clip_vertical"
+                android:layout_marginTop="65dp"
+                android:height="45dp"
+                android:background="@drawable/btn_design"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="0.35"
+                android:text="LET's START"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

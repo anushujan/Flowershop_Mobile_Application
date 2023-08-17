@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.admin_manage_flower">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/greenback">
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/baseline_cancel_24" />
+
+            <TextView
+                android:id="@+id/txt_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="0.18"
+                android:text="ManageflowerS"
+                android:textColor="#1D4225"
+                android:textSize="43sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-200dp"
+            android:background="@drawable/round_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.18"
+                android:text="ID"
+                android:textColor="#1D4225"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/flower_id_layout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#1D4225"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#6C1F81"
+                app:helperTextEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconTint="#DD6C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text|textPersonName"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtflower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.18"
+                android:text="Flower name"
+                android:textColor="#1D4225"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/flower_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#1D4225"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#6C1F81"
+                app:helperTextEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconTint="#DD6C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_flower"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text|textPersonName"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.18"
+                android:text="Category"
+                android:textColor="#1D4225"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/flower_category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#1D4225"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#6C1F81"
+                app:helperTextEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconTint="#DD6C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_category"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text|textPersonName"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/dagestan"
+                android:letterSpacing="0.18"
+                android:text="Price"
+                android:textColor="#1D4225"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/flower_price_layout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#D96C1F81"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxBackgroundMode="outline"
+                app:boxCollapsedPaddingTop="10dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="#1D4225"
+                app:boxStrokeWidth="1dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#6C1F81"
+                app:helperTextEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:hintTextColor="@color/dark_violet"
+                app:startIconTint="#DD6C1F81">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text|textPersonName"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edtboxdesign"
+                android:backgroundTint="#C3FACF"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    app:srcCompat="@drawable/baseline_delete_24" />
+                <ImageView
+                    android:id="@+id/img_update"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_update_24" />
+                <ImageView
+                    android:id="@+id/img_add"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/baseline_add_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

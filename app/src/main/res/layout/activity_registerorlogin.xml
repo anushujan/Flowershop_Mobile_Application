@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.register_or_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="510dp"
+            android:layout_height="480dp"
+            android:layout_marginLeft="-54dp"
+            android:layout_marginTop="-19dp"
+            android:background="@drawable/insideshop">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="Choose your way"
+                android:textSize="34sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_design"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:letterSpacing="0.19"
+                    android:text="LOGIN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_design"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:letterSpacing="0.19"
+                    android:text="REGISTER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-20dp"
+    app:cardBackgroundColor="#D2FAFF"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="12dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/display_flower_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="category "
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/display_cat_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="category description"
+                android:textColor="#57398F"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imvCircularWithStroke"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/homeshop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imvCircular"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="#6C1F81" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

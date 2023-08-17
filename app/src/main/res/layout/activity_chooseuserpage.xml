@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose_user_page" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="480dp"
+            android:layout_height="510dp"
+            android:layout_marginLeft="-47dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/deliveryboy"
+            android:scaleX="-1">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/round_box"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:text="You are a"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_admin"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_design"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:letterSpacing="0.19"
+                    android:text="ADMIN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/btn_customer"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_design"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:letterSpacing="0.19"
+                    android:text="CUSTOMER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

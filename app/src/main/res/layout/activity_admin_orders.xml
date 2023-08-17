@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.admin_orders">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/yellowback">
+
+            <TextView
+                android:id="@+id/txt_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="0.18"
+                android:text="OrderS"
+                android:textColor="#574822"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/img_cancels"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/baseline_cancel_24" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-120dp"
+            android:background="@drawable/round_box"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:layout_marginTop="34dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

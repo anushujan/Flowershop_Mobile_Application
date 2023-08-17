@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.admin_bloom_room">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:background="@drawable/purplepink">
+
+            <TextView
+                android:id="@+id/txt_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/dagestan"
+                android:gravity="center"
+                android:letterSpacing="0.18"
+                android:text="BLOOM ROOM"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-110dp"
+            android:background="@drawable/round_box1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round_box1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_btn_category"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="22dp"
+                        android:background="@drawable/cat_box_design"
+                        android:gravity="center"
+                        android:shadowRadius="20"
+                        android:text="CategorY"
+                        android:textColor="#57398F"
+                        android:textSize="42sp"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_btn_orders"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_btn_flowers"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_btn_flowers"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="11dp"
+                        android:background="@drawable/cat_box_design1"
+                        android:gravity="center"
+                        android:text="FlowerS"
+                        android:textColor="#1D4225"
+                        android:textSize="42dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_btn_category"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_btn_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/cat_box_design2"
+                        android:gravity="center"
+                        android:text="OrderS"
+                        android:textColor="#574822"
+                        android:textSize="42dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_btn_flowers" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/img_logout"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="310dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/baseline_logout_24" />
+
+                <TextView
+                    android:id="@+id/txt_logot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="-45dp"
+                    android:fontFamily="@font/dagestan"
+                    android:gravity="center"
+                    android:letterSpacing="0.18"
+                    android:text="LOGOUT"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
